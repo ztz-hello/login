@@ -142,12 +142,18 @@ export default {
     },
     switchLogin (index) {
       if (index === 1) {
-        this.error_username = ''
+        this.error_phone = ''
+        this.username = ''
+        this.password = ''
+        this.error_password = ''
         this.loginWay = false
       }
       if (index === 2) {
+        this.error_username = ''
         this.loginWay = true
         this.password = ''
+        this.error_password = ''
+        this.phone = ''
       }
     }
   }
